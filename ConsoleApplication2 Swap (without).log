@@ -1,0 +1,5 @@
+﻿  ConsoleApplication2 Swap (without).cpp
+D:\проект Hello world\ConsoleApplication2 Swap (without)\ConsoleApplication2 Swap (without).cpp(8,8): warning C4101:  B: неиспользованная локальная переменная
+D:\проект Hello world\ConsoleApplication2 Swap (without)\ConsoleApplication2 Swap (without).cpp(8,6): warning C4101:  A: неиспользованная локальная переменная
+D:\проект Hello world\ConsoleApplication2 Swap (without)\ConsoleApplication2 Swap (without).cpp(8,11): warning C4101:  C: неиспользованная локальная переменная
+  ConsoleApplication2 Swap (without).vcxproj -> D:\проект Hello world\ConsoleApplication2 Swap (without)\Debug\ConsoleApplication2 Swap (without).exe
