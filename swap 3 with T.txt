@@ -1,0 +1,4 @@
+﻿1>------ Сборка начата: проект: SWAP 3 ConsoleApplication2, Конфигурация: Debug Win32 ------
+1>SWAP 3 ConsoleApplication2.cpp
+1>SWAP 3 ConsoleApplication2.vcxproj -> D:\проект Hello world\SWAP 3 ConsoleApplication2\Debug\SWAP 3 ConsoleApplication2.exe
+========== Сборка: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========

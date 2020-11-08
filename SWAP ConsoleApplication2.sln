@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SWAP ConsoleApplication2", "SWAP ConsoleApplication2.vcxproj", "{8FEADCA5-8843-4585-84A3-FAF4ABEE804A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FEADCA5-8843-4585-84A3-FAF4ABEE804A}.Debug|x64.ActiveCfg = Debug|x64
+		{8FEADCA5-8843-4585-84A3-FAF4ABEE804A}.Debug|x64.Build.0 = Debug|x64
+		{8FEADCA5-8843-4585-84A3-FAF4ABEE804A}.Debug|x86.ActiveCfg = Debug|Win32
+		{8FEADCA5-8843-4585-84A3-FAF4ABEE804A}.Debug|x86.Build.0 = Debug|Win32
+		{8FEADCA5-8843-4585-84A3-FAF4ABEE804A}.Release|x64.ActiveCfg = Release|x64
+		{8FEADCA5-8843-4585-84A3-FAF4ABEE804A}.Release|x64.Build.0 = Release|x64
+		{8FEADCA5-8843-4585-84A3-FAF4ABEE804A}.Release|x86.ActiveCfg = Release|Win32
+		{8FEADCA5-8843-4585-84A3-FAF4ABEE804A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B768B44-9DA6-470C-8AFB-55BC14372107}
+	EndGlobalSection
+EndGlobal

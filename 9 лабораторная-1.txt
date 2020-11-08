@@ -1,0 +1,77 @@
+#include <iostream>
+#include <ctime>
+#include <fstream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "rus");
+	srand(time(NULL));
+
+	int h, e, a, b, r, y;
+	const int n = 7;
+
+	cout << "1) ввод с клавиатуры\n2) перенаправление\n";
+	cin >> e;
+	system("cls");
+
+	switch (e) {
+	case 1: {
+		//const int n = 7;
+		cout << "a - "; cin >> a;
+		cout << "b - "; cin >> b;
+		cout << "h(эл гл дианогали) - "; cin >> h;//которые пренадлежат главной дианонали
+		cout << "r(эл выше диагонали) - "; cin >> r;//которые выше главной диагонали
+		cout << "y(эл ниже гл диагонали) - "; cin >> y;//эл ниже гл диагонали
+	}
+	case 2: {
+		ofstream file("tutu.txt");
+		file << "-10 40 1 2 3";
+		file.close();
+
+		ifstream textFile("tutu.txt");
+		cout << "a - "; textFile >> a; cout << a << endl;
+		cout << "b - "; textFile >> b; cout << b << endl;
+		cout << "h(эл гл дианогали) - "; textFile >> h; cout << h << endl;
+		cout << "r(эл выше диагонали) - "; textFile >> r; cout << r << endl;
+		cout << "y(эл ниже гл диагонали) - "; textFile >> y; cout << y << endl;
+	}
+	}
+	int MAS[n][n];
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			MAS[i][j] = a + rand() % (b - a + 1);
+			cout << MAS[i][j] << "\t";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	cout << endl;
+
+	for (int i = 0; i < n - 1; i++) {//меняем эл выше гл диагонали на переменную r
+		for (int j = 1; j < n; j++)
+			MAS[i][j] = r;
+	}
+
+	for (int i = 1; i < n; i++) {//меняем эл ниже главной диагонали на переменную y
+		for (int j = 0; j < i; j++) {
+			MAS[i][j] = y;
+		}
+	}
+
+	for (int i = 0; i < n; i++) {//меняем эл гл диагонали на переменную h
+		for (int j = 0; j < n; j++) {
+			if (i == j)
+				MAS[i][j] = h;
+		}
+	}
+
+	for (int i = 0; i < n; i++) {// выводим полученый массив на экран
+		for (int j = 0; j < n; j++)
+			cout << MAS[i][j] << "\t";
+		cout << endl;
+	}
+	cout << endl;
+	system("pause");
+	return 0;
+}

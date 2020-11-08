@@ -1,0 +1,125 @@
+#include <iostream>
+#include <cmath>
+#include <math.h>
+#include <fstream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "rus");
+
+	int e, a, b, n1, n2, x, y, rot1, rot2;
+	cout << "1) ввод с клавиатуры\n2) перенаправление" << endl;
+	cin >> e;
+
+	system("cls");
+
+	switch (e) {
+	case 1: {
+		rot1 = 0, rot2 = 0;
+		cout << "a - "; cin >> a;
+		cout << "b - "; cin >> b;
+		cout << "n1 - "; cin >> n1;
+		cout << "n2 - "; cin >> n2;
+		system("cls");
+	}
+	case 2: {
+		/*
+		ofstream file("bum.txt");
+		file << "-10 30 10 40 0 0";
+		file.close();
+		*/
+		ifstream textFile("bum.txt");
+		cout << "a = "; textFile >> a; cout << a << endl;
+		cout << "b = "; textFile >> b; cout << b << endl;
+		cout << "n1 = "; textFile >> n1; cout << n1 << endl;
+		cout << "n2 = "; textFile >> n2; cout << n2 << endl;
+		textFile >> rot1 >> rot2;
+		textFile.close();
+	}
+	}
+
+	cout << endl;
+	int min1 = b, min2 = b;
+	int A[100];
+	for (int i = 0; i < n1; i++) {
+		A[i] = a + rand() % (b - a + 1);
+		cout << A[i] << " ";
+		if (A[i] < min1) {
+			min1 = A[i];
+			x = i;
+		}
+
+	}
+	cout << endl << "min1 - " << min1 << endl;
+	int B[100];
+	for (int i = 0; i < n2; i++) {
+		B[i] = a + rand() % (b - a + 1);
+		cout << B[i] << " ";
+		if (B[i] < min2) {
+			min2 = B[i];
+			y = i;
+		}
+
+	}
+	cout << endl << "min2 - " << min2 << endl;
+	int C[100];
+	int q = 0;
+	for (int i = 0; i < x; i++) {
+		if (A[i] > 0) {
+			C[q] = A[i];
+			q++;
+			rot1++;
+		}
+	}
+	for (int i = 0; i < y; i++) {
+		if (B[i] > 0) {
+			C[q] = B[i];
+			q++;
+			rot2++;
+		}
+	}
+	for (int i = 0; i < q; i++)
+		cout << C[i] << " ";
+	cout << endl << "\nВторая часть:";
+	cout << endl << "из первого массива - " << rot1 << endl;
+	cout << "из второго массива - " << rot2 << endl;
+	cout << "\nТретья часть:\n";
+	for (int i = 1; i < n1; i++) {
+		for (int j = 0; j < n1 - 1; j++) {
+			if (abs(A[j]) < abs(A[j + 1])) {
+				int temp = A[j];
+				A[j] = A[j + 1];
+				A[j + 1] = temp;
+			}
+		}
+	}
+	for (int i = 1; i < n1; i++) {
+		for (int j = 0; j < n1 - 1; j++) {
+			if (abs(B[j]) < abs(B[j + 1])) {
+				int temp = B[j];
+				B[j] = B[j + 1];
+				B[j + 1] = temp;
+			}
+		}
+	}
+	for (int i = 1; i < q; i++) {
+		for (int j = 0; j < q - 1; j++) {
+			if (abs(C[j]) < abs(C[j + 1])) {
+				int temp = C[j];
+				C[j] = C[j + 1];
+				C[j + 1] = temp;
+			}
+		}
+	}
+	for (int i = 0; i < n1; i++)
+		cout << A[i] << " ";
+	cout << endl;
+	for (int i = 0; i < n2; i++)
+		cout << B[i] << " ";
+	cout << endl;
+	for (int i = 0; i < q; i++)
+		cout << C[i] << " ";
+	cout << endl;
+	system("pause");
+	return 0;
+}

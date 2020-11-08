@@ -1,0 +1,54 @@
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+int main() {//а вот тебе и √Ћј¬Ќјя функци€
+	setlocale(LC_ALL, "rus");
+	srand(time(NULL));
+	const int n = 7;
+	int h, a, b, r, y;//, h;
+	cout << "a - "; cin >> a;
+	cout << "b - "; cin >> b;
+	cout << "h(эл гл дианогали) - "; cin >> h;//которые пренадлежат главной дианонали
+	cout << "r(эл выше диагонали) - "; cin >> r;//которые выше главной диагонали
+	cout << "y(эл ниже гл диагонали) - "; cin >> y;//эл ниже гл диагонали
+	int MAS[n][n];
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			MAS[i][j] = a + rand() % (b - a + 1);
+			cout << MAS[i][j] << "\t";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	cout << endl;
+
+	for (int i = 0; i < n - 1; i++) {//мен€ем эл выше гл диагонали на переменную r
+		for (int j = 1; j < n; j++)
+			MAS[i][j] = r;
+	}
+
+	for (int i = 1; i < n; i++) {//мен€ем эл ниже главной диагонали на переменную y
+		for (int j = 0; j < i; j++) {
+			MAS[i][j] = y;
+		}
+	}
+
+	for (int i = 0; i < n; i++) {//мен€ем эл гл диагонали на переменную h
+		for (int j = 0; j < n; j++) {
+			if (i == j)
+				MAS[i][j] = h;
+		}
+	}
+
+	for (int i = 0; i < n; i++) {// выводим полученый массив на экран
+		for (int j = 0; j < n; j++)
+			cout << MAS[i][j] << "\t";
+		cout << endl;
+	}
+	cout << endl;
+	system("pause");
+	return 0;
+}
