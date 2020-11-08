@@ -1,0 +1,5 @@
+﻿  lb programming 7.cpp
+D:\УНИВЕР\ПРОГА\ПРОГА ЛБ 7\ПРОГА ЛБ 7_1\lb programming 7.cpp(54,15): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+D:\УНИВЕР\ПРОГА\ПРОГА ЛБ 7\ПРОГА ЛБ 7_1\lb programming 7.cpp(54,34): warning C4244:  +=: преобразование "double" в "float", возможна потеря данных
+D:\УНИВЕР\ПРОГА\ПРОГА ЛБ 7\ПРОГА ЛБ 7_1\lb programming 7.cpp(34,24): warning C4101:  d: неиспользованная локальная переменная
+  lb programming 7.vcxproj -> D:\УНИВЕР\ПРОГА\ПРОГА ЛБ 7\ПРОГА ЛБ 7_1\Debug\lb programming 7.exe

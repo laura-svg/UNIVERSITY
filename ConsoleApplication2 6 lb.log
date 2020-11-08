@@ -1,0 +1,4 @@
+﻿  ConsoleApplication2 6 lb.cpp
+C:\Users\User\source\repos\ConsoleApplication2 6 lb\ConsoleApplication2 6 lb.cpp(11,34): warning C4101:  q: неиспользованная локальная переменная
+C:\Users\User\source\repos\ConsoleApplication2 6 lb\ConsoleApplication2 6 lb.cpp(11,30): warning C4101:  t: неиспользованная локальная переменная
+  ConsoleApplication2 6 lb.vcxproj -> C:\Users\User\source\repos\ConsoleApplication2 6 lb\Debug\ConsoleApplication2 6 lb.exe
