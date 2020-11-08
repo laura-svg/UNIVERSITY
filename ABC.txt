@@ -1,0 +1,8 @@
+﻿1>------ Сборка начата: проект: ABC ConsoleApplication1, Конфигурация: Debug Win32 ------
+1>ABC ConsoleApplication1.cpp
+1>D:\проект Hello world\ABC ConsoleApplication1\ABC ConsoleApplication1.cpp(9,18): warning C4101:  e: неиспользованная локальная переменная
+1>D:\проект Hello world\ABC ConsoleApplication1\ABC ConsoleApplication1.cpp(9,21): warning C4101:  w: неиспользованная локальная переменная
+1>D:\проект Hello world\ABC ConsoleApplication1\ABC ConsoleApplication1.cpp(9,15): warning C4101:  d: неиспользованная локальная переменная
+1>ABC ConsoleApplication1.vcxproj -> D:\проект Hello world\ABC ConsoleApplication1\Debug\ABC ConsoleApplication1.exe
+1>Сборка проекта "ABC ConsoleApplication1.vcxproj" завершена.
+========== Сборка: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========
