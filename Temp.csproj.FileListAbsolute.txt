@@ -1,0 +1,12 @@
+C:\Temp\bin\Debug\Temp.exe.config
+C:\Temp\bin\Debug\Temp.exe
+C:\Temp\bin\Debug\Temp.pdb
+C:\Temp\obj\Debug\Temp.csprojAssemblyReference.cache
+C:\Temp\obj\Debug\Temp.Properties.Resources.resources
+C:\Temp\obj\Debug\Temp.csproj.GenerateResource.cache
+C:\Temp\obj\Debug\Temp.csproj.CoreCompileInputs.cache
+C:\Temp\obj\Debug\Temp.exe
+C:\Temp\obj\Debug\Temp.pdb
+C:\Temp\obj\Debug\Temp.Form1.resources
+C:\Temp\obj\Debug\Temp.AboutProgramm.resources
+C:\Temp\obj\Debug\Temp.Form2.resources
