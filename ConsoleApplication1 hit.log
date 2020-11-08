@@ -1,0 +1,6 @@
+﻿  ConsoleApplication1 hit.cpp
+D:\проект Hello world\ConsoleApplication1 hit\ConsoleApplication1 hit.cpp(11,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\проект Hello world\ConsoleApplication1 hit\ConsoleApplication1 hit.cpp(13,12): warning C4244:  =: преобразование "int" в "float", возможна потеря данных
+D:\проект Hello world\ConsoleApplication1 hit\ConsoleApplication1 hit.cpp(14,12): warning C4244:  =: преобразование "int" в "float", возможна потеря данных
+D:\проект Hello world\ConsoleApplication1 hit\ConsoleApplication1 hit.cpp(15,8): warning C4244:  =: преобразование "int" в "float", возможна потеря данных
+  ConsoleApplication1 hit.vcxproj -> D:\проект Hello world\ConsoleApplication1 hit\Debug\ConsoleApplication1 hit.exe
